@@ -1,0 +1,19 @@
+{% extends "cabecera.html" %}
+    {% block contenido %}
+
+    <div class="inner">
+        <nav>
+            <ul>
+                {% for i in colecciones %}
+
+                <li><a href="/bd/{{ i }}">{{ i }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+
+                                               
+
+
+
+{% endblock %}

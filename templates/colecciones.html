@@ -1,0 +1,27 @@
+{% extends "cabecera.html" %}
+{% block contenido %}
+<h3>Contenido</h3>
+
+
+<section>
+		<div class="row">
+			<div class="col-6 col-12-medium">
+				{% for i in listacol %}
+					{% for campo,valor in i.items() %}
+		
+				<ul>
+					<li>{{ campo }}: {{ valor}}</li>
+
+				</ul>
+				{% endfor %}
+
+	<h3>------------------------------------------------------</h3>
+<!-- 
+<br>
+	{% for campo,valor in i.items() %}
+		<pre>{{ campo }}: {{ valor}}</pre>
+	{% endfor %}
+</br> -->
+{% endfor %}
+{% endblock %}
+
